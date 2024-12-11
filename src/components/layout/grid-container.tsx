@@ -5,7 +5,7 @@ interface GridContainerProps {
   
   export function GridContainer({ children, columns = 4 }: GridContainerProps) {
     return (
-      <div className={`grid grid-cols-4 md:grid-cols-${columns} sm:grid-cols-1 gap-6`}>
+      <div className={`grid grid-cols-4 md:grid-cols-4 gap-6`}>
         {children}
       </div>
     );
