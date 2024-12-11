@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --background: 0 0% 100%;
+    --background-subtle: 0 0% 98%;
+    --background-muted: 0 0% 96%;
+    
+    /* Text Colors */
+    --foreground: 0 0% 13%;
+    --foreground-subtle: 0 0% 25%;
+    --foreground-muted: 0 0% 40%;
+    
+    /* Muted Colors */
+    --muted: 180 60% 80%;
+    --muted-foreground: 0 0% 30%;
+    
+    /* Primary Colors */
+    --primary: 180 70% 40%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary Colors */
+    --secondary: 45 90% 65%;
+    --secondary-foreground: 0 0% 13%;
+    
+    /* Accent Colors */
+    --accent: 330 70% 65%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Border & Ring Colors */
+    --border: 180 30% 70%;
+    --ring: 180 70% 40%;
+    
+    /* Input Colors */
+    --input: 180 30% 70%;
+    
+    /* Card Colors */
+    --card: 180 75% 97%;
+    --card-foreground: 0 0% 13%;
+    
+    /* Popover Colors */
+    --popover: 180 75% 97%;
+    --popover-foreground: 0 0% 13%;
+    
+    /* Status Colors */
+    --destructive: 350 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 90% 65%;
+    --warning-foreground: 0 0% 13%;
+  }
+
+  .dark {
+    /* Background Colors */
+    --background: 0 0% 15%;
+    --background-subtle: 0 0% 18%;
+    --background-muted: 0 0% 22%;
+    
+    /* Text Colors */
+    --foreground: 180 75% 95%;
+    --foreground-subtle: 180 70% 85%;
+    --foreground-muted: 180 65% 75%;
+    
+    /* Muted Colors */
+    --muted: 0 0% 25%;
+    --muted-foreground: 180 60% 80%;
+    
+    /* Primary Colors */
+    --primary: 180 70% 50%;
+    --primary-foreground: 0 0% 13%;
+    
+    /* Secondary Colors */
+    --secondary: 45 90% 65%;
+    --secondary-foreground: 0 0% 13%;
+    
+    /* Accent Colors */
+    --accent: 330 70% 65%;
+    --accent-foreground: 0 0% 13%;
+    
+    /* Border & Ring Colors */
+    --border: 0 0% 30%;
+    --ring: 180 70% 50%;
+    
+    /* Input Colors */
+    --input: 0 0% 30%;
+    
+    /* Card Colors */
+    --card: 0 0% 18%;
+    --card-foreground: 180 75% 95%;
+    
+    /* Popover Colors */
+    --popover: 0 0% 18%;
+    --popover-foreground: 180 75% 95%;
+    
+    /* Status Colors */
+    --destructive: 350 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 13%;
+    
+    --warning: 45 90% 65%;
+    --warning-foreground: 0 0% 13%;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+  }
+}
+
+.cl-internal-199ggar {
+  display: none;
+}
